@@ -3,8 +3,8 @@
 ## 基础命令安装
 
 ```bash
-sudo apt install build-essential
-sudo apt install vim
+sudo apt install build-essential -y
+sudo apt install vim -y
 sudo apt-get install curl -y
 sudo apt-get install git -y
 sudo apt-get install net-tools -y
