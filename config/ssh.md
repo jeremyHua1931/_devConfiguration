@@ -36,3 +36,10 @@ export NO_PROXY="127.0.0.1,localhost"
 #将要从代理中排除的其他IP添加到NO_PROXY和no_proxy环境变量中
 
 ```
+```
+sudo chmod +x  /etc/profile.d/proxy.sh
+source /etc/profile.d/proxy.sh
+#查看环境变量进行确认是否生效
+env | grep -i proxy
+
+```
