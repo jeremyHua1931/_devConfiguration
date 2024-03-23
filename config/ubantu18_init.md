@@ -3,20 +3,25 @@
 ## 基础命令安装
 
 ```bash
-sudo apt install build-essential -y
-sudo apt install vim -y
+
+sudo apt-get install build-essential -y
+sudo apt-get install vim -y
 sudo apt-get install curl -y
 sudo apt-get install git -y
 sudo apt-get install net-tools -y
+
 # sudo apt-get install open-vm-tools-desktop -y
 ```
 
 * 配置on-my-zsh
-    * `echo $SHELL`
-    * `cat /etc/shells`
-    * `sudo apt install zsh -y`
-    * `chsh -s /bin/zsh`
-    * `sudo reboot`
+```
+echo $SHELL
+cat /etc/shells
+sudo apt install zsh -y
+chsh -s /bin/zsh
+
+# sudo reboot
+```
 * 配置.vimrc
 * 安装jdk8[link](https://blog.csdn.net/zbj18314469395/article/details/86064849)
     * `sudo apt-get install openjdk-8-jdk -y`

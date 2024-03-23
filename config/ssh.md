@@ -3,6 +3,7 @@
 ```
 # 免密登录
 ssh-keygen -t rsa -f ssh-key
+
 vim authorized_keys
 chmod 644 authorized_keys
 ```

@@ -1,19 +1,27 @@
 # zshrc
 
+
+
+
 * `echo $SHELL`
 * `cat /etc/shells`
 * `sudo apt install zsh -y`
 * `chsh -s /bin/zsh`
 * `sudo reboot`
 * `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
 ```
 #zsh-autosuggestions 命令行命令键入时的历史命令建议
 #zsh-syntax-highlighting 命令行语法高亮插件
+
 git clone https://gitee.com/mirrors/oh-my-zsh.git  ~/.oh-my-zsh
 cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
 git clone https://gitee.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://gitee.com/Annihilater/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 ```
+
+
 ```
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -118,6 +126,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 ```
 
+
+
 ```
 function proxy_on() {
     export http_proxy=http://127.0.0.1:7890
@@ -130,6 +140,8 @@ function proxy_off(){
     echo -e "终端代理已关闭。"
 }
 ```
+
+
 
 ```
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64
