@@ -44,3 +44,28 @@ source /etc/profile.d/proxy.sh
 env | grep -i proxy
 
 ```
+
+
+ssh vscode
+```
+sudo apt-get install openssh-server 
+sudo ufw disable #关闭防火墙；或者将22端口开放
+sudo service sshd start
+
+systemctl enable ssh.service  # 开机自启
+service ssh restart
+```
+
+ssh x11转发功能
+```
+vim /etc/ssh/sshd_config
+
+AllowTcpForwarding yes
+X11Forwarding yes
+X11DisplayOffset 10
+X11UseLocalhost no
+
+service ssh restart
+apt install xauth
+apt install ttf-wqy-zenhei
+```
